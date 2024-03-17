@@ -1,4 +1,5 @@
 provider "aws" {
+    region = "us-east-1"
   
 }
 
@@ -6,8 +7,8 @@ provider "aws" {
 #Once they are done if you did not get any errors you will get the state file and you have to take values from state file and add them in the resource block
 
 resource "aws_instance" "dev" {
-    ami = "ami-0e0bf53f6def86294"
+    ami = "ami-0d7a109bf30624c99"
     instance_type = "t3.micro"
-    key_name = "Git"
+    key_name = "Worried"
   
 }
